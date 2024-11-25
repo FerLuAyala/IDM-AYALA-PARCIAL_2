@@ -186,6 +186,9 @@ input{
    
 
 }
+.formulario{
+    padding-top: 3rem;
+}
 .form-control , .form-select{
     background-color: rgb(250, 237, 222);
     box-shadow: 0 4px 8px rgba(19, 19, 19, 0.432);
