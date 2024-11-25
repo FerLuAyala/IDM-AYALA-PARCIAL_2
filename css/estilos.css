@@ -143,6 +143,7 @@ font-weight: 500;
 footer {
     background-image: url(../img/footer/fondo_footer.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 3rem;
     
 }
