@@ -1,8 +1,3 @@
-
-
-h1{
-    display:none;
-}
 img{
     width: 100%;
     filter: drop-shadow(4px 8px 5px rgba(0, 0, 0, 0.575));
@@ -25,6 +20,20 @@ main{
     
 }
 
+nav{
+    background-color: rgba(0, 0, 0, 0.63);
+    box-shadow: rgba(0, 0, 0, 0.219) 2px 6px 3px;
+}
+nav a:hover {
+    background-color: #ff7f00;
+}
+nav a:active {
+    background-color: #e67e00;
+}
+h1{
+    display:none;
+}
+
 h2, h3, span, em{
     font-family: "Arvo", serif;
 }
@@ -36,15 +45,19 @@ h2{
     color: rgb(248, 114, 5); 
     font-size: 2rem;
     font-weight: 500;
-    text-align: right;
-    
-}
+  
+}   
 
 h3{
     font-size: 1.8rem;
 }
 
-
+span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(247, 100, 32);
+    
+}
 
 strong{
     font-weight:800;
@@ -60,25 +73,32 @@ em{
 }
 
 
-
-/*--------------------------------------------*/
-
-
 .descuento {
     filter: drop-shadow(4px 8px 5px rgba(0, 0, 0, 0.575));
     position: absolute;
     max-width: 15%;
-    top: 150px;
+    top: 125px;
     left: 20px;
 }
 
 .btn {
-    background-color: rgb(241, 92, 22);
-    color: rgb(250, 247, 247);
-    box-shadow: 2px 7px 8px 1px rgba(0, 0, 0, 0.21);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
-   
+    background-color: #ff7f00; 
+    color: white;                        
+    border-radius: 5px;        
+    text-align: center;   
+    text-transform: uppercase;     
+    display: inline-block;  
+    margin-bottom: auto;
+
 }
+
+
+
+.btn:hover {
+    background-color: rgb(112, 36, 6);  
+
+}
+
 
 
 .foto2 {
@@ -86,37 +106,7 @@ em{
 }
 
 
-/*--------------------------------------------*/
-
-.miFoto {
-
-    width: 150px;
-    margin: auto;
-
-}
-
-footer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondo_footer.jpg");
-    color: beige;
-    text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.151);
-    margin-top: 5rem;
-}
-.infoPerso>a{
-    text-decoration: none;
-    color: rgb(248, 239, 226);
-}
-
-
-
-
-span{
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(247, 100, 32);
-    font-family: "Arvo", serif;
-}
-
-.card {
+.card{
     height: 100%;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.349) 0%, rgba(25, 25, 26, 0.11) 100%); 
     border: 1px solid transparent;
@@ -127,10 +117,86 @@ span{
       
 }
 .card a {
-
+text-decoration: none;
+font-size: 1.3rem;
+font-weight: 500;
     color: rgb(15, 224, 224);
+}
+
+.card a:hover {
+    background-color: rgb(3, 3, 3);  
 
 }
+
+.button {
+    background-color: #e67e00;
+}
+
+.miFoto {
+
+    width: 150px;
+    margin: auto;
+
+}
+
+
+footer {
+    background-image: url(../img/footer/fondo_footer.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+footer a {
+   
+    text-decoration: none; 
+}
+.presentacion{
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+
+.infoFender{
+    padding: 2rem;
+}
+.divInfo{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.imgFender2{
+    display:none;
+}
+
+.imgFender1{
+    padding-bottom: 2rem;
+}
+
+label{
+    display:none;
+}
+
+input{
+    margin-bottom: 2rem;
+   
+
+}
+.form-control , .form-select{
+    background-color: rgb(250, 237, 222);
+    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.432);
+}
+
+.forPre{
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.349) 0%, rgba(25, 25, 26, 0.11) 100%); 
+    border: 1px solid transparent;
+    border-image: linear-gradient(180deg, rgba(244, 85, 12, 1) 0%, rgba(17, 204, 242, 1) 100%) 1; 
+    padding: 2rem;
+}
+
 
 
 @media (min-width: 768px ) { 
@@ -143,11 +209,35 @@ span{
         display: none;
     }
     h3{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
        
     }
-    
+
+    /*********info************/
+
+    .divInfo{
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgFender2{
+        display: block;
+    }
+    .imgFender1{
+        display:none;
+    }
+
+    footer .pb-3 {
+        padding-bottom: 20px;
+    }
+
+    .enviar , .btn {
+      margin: auto;
+      width: 50%;
+    }
  }
+
+
+
+
 
  @media (min-width: 920px ) { 
     
@@ -158,13 +248,7 @@ span{
         display: flex;
     }
 
-    .banner-text {
-        text-align: right;
-
-
-    }
-
-    .img-banner{
+   .img-banner{
         margin-left: 0;
     }
 
@@ -173,6 +257,23 @@ span{
         font-family: "Arvo", serif;
     }
 
+
+   
+/*---------info----------*/
+
+.divInfo{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgFender2{
+    display:none;
+  
+}
+
+.imgFender1 {
+    display:block;
+    grid-column: 1/3;
+}
 
  }
 

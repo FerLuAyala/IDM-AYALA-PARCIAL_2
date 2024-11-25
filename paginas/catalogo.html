@@ -25,7 +25,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md sticky-top" data-bs-theme="dark">
         <div class="container">
             <div class="navbar-brand">
                 <h1>sonata</h1>
@@ -39,13 +39,16 @@
             <div class="collapse navbar-collapse " id="barraNavegacion">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Intro</a>
+                        <a class="nav-link active" href="/index.html">Intro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Catalogo</a>
+                        <a class="nav-link" href="/paginas/catalogo.html">Catalogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Detalles</a>
+                        <a class="nav-link" href="/paginas/detalles.html">Detalles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/paginas/nuevo.html">Nuevo</a>
                     </li>
                 </ul>
 
@@ -54,19 +57,21 @@
         </div>
     </nav>
 
-    <header class="container">
-        <img src="/img/banner2.jpg" alt="Descuento del 30%">
+    <header class="container p-0">
+        <img src="/img/caracteristicas/banner3.jpg" alt="Banner catalogo">
 
     </header>
 
 
-    <main>
+    <main class="container">
 
-        <div class="container">
+        <div class="container p-4">
             <h2>Catálogo</h2>
             <div class="row">
+
+
                 <div class="col-12 pb-3">
-                       <div class="card p-3">
+                    <div class="card p-3">
                         <div class="row g-0">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6">
@@ -86,12 +91,18 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
+
+
+
                                     </div>
-                                    
+
                                     <div class="foto2">
                                         <img class="producto2 img-fluid" src="/img/productos/bateria.png"
                                             alt="Bateria yamaha color marron">
@@ -106,10 +117,11 @@
 
                 <div class="col-12 col-md-6 col-lg-3 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-lg-12">
-                                <img class="img-fluid" src="/img/productos/amplificador.png" alt="bateria color azul">
+                                <img class="img-fluid" src="/img/productos/amplificador.png"
+                                    alt="amplificador marsahll">
 
                             </div>
                             <div class="col-lg-12">
@@ -127,9 +139,12 @@
                                     </p>
 
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -138,13 +153,14 @@
                         </div>
                     </div>
                 </div>
-       
+
                 <div class="col-12 col-md-6 col-lg-3 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-lg-12">
-                                <img class="img-fluid" src="/img/productos/semiacústica.png" alt="bateria color azul">
+                                <img class="img-fluid" src="/img/productos/semiacústica.png"
+                                    alt="guitarra semiacustica">
 
                             </div>
                             <div class="col-lg-12">
@@ -160,9 +176,12 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -174,10 +193,10 @@
 
                 <div class="carteles col-12 col-md-6 col-lg-3 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-lg-12">
-                                <img class="img-fluid" src="/img/productos/guitarra2.png" alt="bateria color azul">
+                                <img class="img-fluid" src="/img/productos/guitarra2.png" alt="Guitarra electrónica">
 
                             </div>
                             <div class="col-lg-12">
@@ -192,9 +211,12 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -206,16 +228,16 @@
 
                 <div class="carteles col-12 col-md-6 col-lg-3 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-lg-12">
                                 <img class="img-fluid" src="/img/productos/Electroacustica.png"
-                                    alt="bateria color azul">
+                                    alt="Guitarra electroacustica">
 
                             </div>
                             <div class="col-lg-12">
                                 <div class="card-body">
-                                    <h3 class="card-title">Guitarra eléctrica Parquer Custom TL100
+                                    <h3 class="card-title">Guitarra Stratocaster® American Professional II
                                     </h3>
                                     <span class="card-text">$382.432,16</span>
                                     <p class="card-text"><i class="fa-solid fa-credit-card fa-lg"
@@ -226,9 +248,12 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -240,10 +265,10 @@
 
                 <div class="col-12 col-md-12 col-lg-8 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-lg-8">
-                                <img class="img-fluid" src="/img/productos/organo.png" alt="bateria color azul">
+                                <img class="img-fluid" src="/img/productos/organo.png" alt="teclado">
                                 <img class="descuento" src="/img/productos/descuento.png" alt="Descuento del 30%">
                             </div>
                             <div class="col-lg-4">
@@ -258,9 +283,12 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -272,10 +300,10 @@
 
                 <div class="col-12 col-md-12 col-lg-4 pb-3">
 
-                    <div class="card">
+                    <div class="card p-2">
                         <div class="row g-0">
                             <div class="col-md-4 col-lg-4">
-                                <img class="img-fluid" src="/img/productos/microfono.png" alt="bateria color azul">
+                                <img class="img-fluid" src="/img/productos/microfono.png" alt="Microfono">
 
                             </div>
                             <div class="col-md-8 col-lg-8">
@@ -291,9 +319,12 @@
                                         <a href="#"> Ver detalles</a>
                                     </p>
                                     <div>
-                                        <button class="btn text-uppercase fw-bold w-100" type="button">
-                                            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #fffdfd;"></i>
-                                            Agregar
+                                        <button type="button" class="btn w-100">
+                                            <a href="/paginas/detalles.html"
+                                                style="color: white; text-decoration: none;">
+                                                <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
+                                                Agregar
+                                            </a>
                                         </button>
                                     </div>
 
@@ -317,30 +348,28 @@
 
 
 
-    
+    <footer class="container">
 
-    <footer>
-
-        <div class="container text-center py-3">
+        <div class="presentacion container p-3">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 pb-3">
+                <div class="col-12 col-md-4 col-lg-6">
                     <div class="miFoto">
-                        <img src="/img/miFoto.jpeg" alt="Foto de la alumna Ayala Fernanda">
+                        <img src="/img/footer/miFoto.jpeg" alt="Foto de la alumna Ayala Fernanda">
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 pb-3">
-                    <div class="infoPerso text-center">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="infoPerso">
                         <p>Fernanda Ayala</p>
                         <p> 09/01/1994 - 30 años</p>
                         <a href="mailto:fernanda.ayala@davinci.edu.ar">fernanda.ayala@davinci.edu.ar</a>
 
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 pb-3">
+                <div class="col-12 col-md-4 col-lg-2">
                     <div class="infoTecni">
-                        <p>Carrera:<strong>Diseño y Programación Web</strong></p>
-                        <p>Mareria:Interacción con Dispositivos Móviles</p>
-                        <p>Profesor: Jorge Perez</p>
+                        <p>Carrera:Diseño y Programación Web</p>
+                        <p>Interacción con Dispositivos Móviles</p>
+                        <p>Jorge Perez</p>
 
                     </div>
                 </div>
